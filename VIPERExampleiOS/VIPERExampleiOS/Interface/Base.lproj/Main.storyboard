@@ -11,32 +11,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VIPERExampleiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="VIPERExampleiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="KgP-VV-sxi" customClass="IPInfoView" customModule="VIPERExampleiOS" customModuleProvider="target">
-                                <rect key="frame" x="48" y="98" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Machine IP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R0-ql-SMg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Machine IP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R0-ql-SMg">
                                         <rect key="frame" x="69" y="215" width="304" height="59"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds3-cj-Taz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds3-cj-Taz">
                                         <rect key="frame" x="69" y="290" width="314" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="k7x-hZ-uc2"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="dbJ-bF-Ibe"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstItem="dbJ-bF-Ibe" firstAttribute="bottom" secondItem="ds3-cj-Taz" secondAttribute="bottom" constant="531" id="C1k-Zf-mHy"/>
+                                    <constraint firstItem="dbJ-bF-Ibe" firstAttribute="trailing" secondItem="ds3-cj-Taz" secondAttribute="trailing" constant="31" id="DTd-pF-gMF"/>
+                                    <constraint firstItem="ds3-cj-Taz" firstAttribute="top" secondItem="2R0-ql-SMg" secondAttribute="bottom" constant="16" id="RQz-hf-Mnd"/>
+                                    <constraint firstItem="2R0-ql-SMg" firstAttribute="leading" secondItem="dbJ-bF-Ibe" secondAttribute="leading" constant="69" id="WFi-Gv-ida"/>
+                                    <constraint firstItem="2R0-ql-SMg" firstAttribute="leading" secondItem="ds3-cj-Taz" secondAttribute="leading" id="aM7-C6-Uly"/>
+                                    <constraint firstItem="dbJ-bF-Ibe" firstAttribute="trailing" secondItem="2R0-ql-SMg" secondAttribute="trailing" constant="41" id="fva-be-5UY"/>
+                                    <constraint firstItem="2R0-ql-SMg" firstAttribute="top" secondItem="dbJ-bF-Ibe" secondAttribute="top" constant="171" id="nPI-NG-7w4"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="lblTitle" destination="2R0-ql-SMg" id="pQD-iJ-ZAL"/>
                                     <outlet property="lblValue" destination="ds3-cj-Taz" id="NeB-Hf-5Sg"/>
@@ -54,8 +64,42 @@
             </objects>
             <point key="canvasLocation" x="572" y="-25"/>
         </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="M30-gl-WQF">
+            <objects>
+                <viewController storyboardIdentifier="LaunchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8bb-IM-KMg" customClass="LaunchViewController" customModule="VIPERExampleiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H9o-yZ-W3c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldQ-34-51f">
+                                <rect key="frame" x="112" y="424.5" width="190" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Get Machine IP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGetIPInfo:" destination="8bb-IM-KMg" eventType="touchUpInside" id="ZpX-y2-aca"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hyh-zF-3Yw"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="ldQ-34-51f" firstAttribute="centerY" secondItem="H9o-yZ-W3c" secondAttribute="centerY" id="9va-Em-K9r"/>
+                            <constraint firstItem="ldQ-34-51f" firstAttribute="centerX" secondItem="H9o-yZ-W3c" secondAttribute="centerX" id="jIw-KW-Tgr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whQ-Lc-vJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="618.75"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

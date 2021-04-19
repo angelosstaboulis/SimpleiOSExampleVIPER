@@ -10,6 +10,7 @@ protocol IPInfoDelegate:AnyObject
 {
     func configureView(view:IPInfoView)
     func fetchIP(completion:@escaping ([IPInfo])->())
+    func showGetIPInfo()
 }
 class IPInfoPresenter{
     init(model:[IPInfo]?=nil) {
@@ -26,6 +27,10 @@ class IPInfoPresenter{
     
     func configureView(view:IPInfoView){
         delegate?.configureView(view: view)
+    }
+    
+    func showGetIPInfo(){
+        delegate?.showGetIPInfo()
     }
     
     func fetchIP(completion:@escaping ([IPInfo])->()){

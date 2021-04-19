@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController,IPInfoDelegate{
+   
+    
     var presenter:IPInfoPresenter!
     @IBOutlet var ipinfoview: IPInfoView!
     override func viewDidLoad() {
@@ -28,6 +30,9 @@ extension ViewController{
             self.presenter.ipinfo = array
             completion(array)
         }
+    }
+    func showGetIPInfo() {
+        
     }
 }
 extension ViewController{

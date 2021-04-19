@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D65FA86B262CF1D000869D3F /* IPInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FA86A262CF1D000869D3F /* IPInfoRouter.swift */; };
+		D65FA873262CF28F00869D3F /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FA872262CF28F00869D3F /* LaunchViewController.swift */; };
 		D662BADF262C69640071481F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662BADE262C69640071481F /* AppDelegate.swift */; };
 		D662BAE1262C69640071481F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662BAE0262C69640071481F /* SceneDelegate.swift */; };
 		D662BAE3262C69640071481F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662BAE2262C69640071481F /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D65FA86A262CF1D000869D3F /* IPInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPInfoRouter.swift; sourceTree = "<group>"; };
+		D65FA872262CF28F00869D3F /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		D662BADB262C69640071481F /* VIPERExampleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERExampleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D662BADE262C69640071481F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D662BAE0262C69640071481F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D65FA869262CF1B700869D3F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D65FA86A262CF1D000869D3F /* IPInfoRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		D662BAD2262C69640071481F = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +165,7 @@
 		D662BB15262C69F70071481F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D65FA869262CF1B700869D3F /* Router */,
 				D662BB3F262C712F0071481F /* Presenter */,
 				D662BB25262C6C010071481F /* Entity */,
 				D662BB24262C6BDF0071481F /* Interactor */,
@@ -167,6 +180,7 @@
 				D662BAE2262C69640071481F /* ViewController.swift */,
 				D662BB16262C6A230071481F /* IPInfoView.swift */,
 				D662BB1E262C6A330071481F /* IPInfoView.xib */,
+				D65FA872262CF28F00869D3F /* LaunchViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,9 +351,11 @@
 				D662BB41262C71DB0071481F /* IPInfoPresenter.swift in Sources */,
 				D662BAE3262C69640071481F /* ViewController.swift in Sources */,
 				D662BADF262C69640071481F /* AppDelegate.swift in Sources */,
+				D65FA86B262CF1D000869D3F /* IPInfoRouter.swift in Sources */,
 				D662BB27262C6C100071481F /* IPInfo.swift in Sources */,
 				D662BAE1262C69640071481F /* SceneDelegate.swift in Sources */,
 				D662BB17262C6A230071481F /* IPInfoView.swift in Sources */,
+				D65FA873262CF28F00869D3F /* LaunchViewController.swift in Sources */,
 				D662BB2F262C6C620071481F /* IPInfoInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
